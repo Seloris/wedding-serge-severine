@@ -14,13 +14,13 @@ import { RouterLink, RouterLinkActive } from '@angular/router';
     `,
   ],
   template: `<div
-    class="flex h-28 flex-row items-center justify-between p-3 px-6 font-title lg:h-36 lg:justify-center lg:p-6"
+    class="flex h-28 flex-row items-center justify-between p-3 px-6 font-body lg:h-36 lg:justify-center lg:p-6"
   >
     <div class="w-12 lg:hidden"></div>
-    <img class="h-24 lg:h-28" src="assets/logo.svg" alt="logo" />
+    <img class="h-24 lg:h-28" src="assets/logo.png" alt="logo" />
 
     <!-- Desktop -->
-    <div class="ml-16 hidden flex-row items-center bg-background font-title lg:flex">
+    <div class="ml-16 hidden flex-row items-center bg-background font-body lg:flex">
       @for (link of links(); track $index) {
         @if (link.path) {
           <a
@@ -96,12 +96,12 @@ import { RouterLink, RouterLinkActive } from '@angular/router';
 export class HeaderComponent {
   isOpened = signal(false);
   links = signal<Link[]>([
-    { label: 'Le mariage', path: '/mariage' },
+    { label: 'Mariage Religieux', path: '/mariage' },
     {
       label: 'Voyage au Japon',
       externalLink: 'https://www.millemercismariage.com/severine-serge240824/liste.html',
     },
-    { label: 'Les photos', path: '/galerie' },
+    { label: 'Mariage Civil', path: '/galerie' },
   ]);
 
   closeDrawer() {

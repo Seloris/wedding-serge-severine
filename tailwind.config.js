@@ -4,10 +4,10 @@ module.exports = {
   theme: {
     extend: {
       colors: {
-        primary: '#907859',
+        primary: '#212993',
         primaryHover: '#cbc7c0',
         primaryLighter: '#eae6e0',
-        secondary: '#548F9E',
+        secondary: '#de7830',
         secondaryLighter: '#cbd6d9',
         background: '#fafaf9',
         black: 'black',
@@ -15,7 +15,7 @@ module.exports = {
       },
       fontFamily: {
         body: '"noto-serif", serif',
-        title: '"bodoni-pt-variable", serif',
+        title: '"Alex Brush", serif',
       },
       keyframes: {
         fadeIn: {
